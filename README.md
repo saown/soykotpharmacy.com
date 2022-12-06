@@ -1,3 +1,3 @@
 # soykotpharmacy.com
 
-[https://soykotpharmacy.com/](soykot pharmacy)
+https://soykotpharmacy.com/
