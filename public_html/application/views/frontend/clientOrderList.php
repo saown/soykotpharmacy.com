@@ -16,7 +16,7 @@
     <div class="text-center mb-5">
         <span class="h2">Your Order List</span>
     </div>
-    <div class="order-list-table bg-white table-responsive">
+    <div class="order-list-table bg-white table-responsive min-vh-100">
         <table class="table table-striped table-sm">
             <thead>
             <tr>
@@ -28,7 +28,7 @@
             </tr>
             </thead>
             <tbody>
-            <?php foreach ($clientOrderList as $clientOrder):?>
+            <?php if ($clientOrderList){ foreach ($clientOrderList as $clientOrder):?>
             <tr>
                 <td>
                     <p class="m-0"><strong>Shipping Info</strong></p>
@@ -70,7 +70,15 @@
                     }?>
                 </td>
             </tr>
-            <?php endforeach;?>
+            <?php endforeach;}else{?>
+                <tr>
+                    <td colspan="5">
+                        <div class="alert alert-danger" role="alert">
+                            No orders have been given yet!
+                        </div>
+                    </td>
+                </tr>
+            <?php }?>
             </tbody>
         </table>
     </div>

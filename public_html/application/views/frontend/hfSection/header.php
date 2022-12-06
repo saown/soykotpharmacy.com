@@ -34,7 +34,7 @@
                             Contact Us
                         </a>
                     </li>
-                    <?php if ($this->session->has_userdata('client_id') && (int)$this->session->userdata('client_status') != 500){ ?>
+                    <?php if ($this->session->has_userdata('client_id')){ ?>
                         <li class="nav-item">
                             <a href="<?= site_url('myOrder')?>" class="btn btn-success btn-sm">My Orders</a>
                         </li>
