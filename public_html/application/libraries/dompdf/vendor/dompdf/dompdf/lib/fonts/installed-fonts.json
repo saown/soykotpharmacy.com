@@ -1,0 +1,15 @@
+{
+    "open sans": {
+        "300_italic": "\/home\/soykotp2\/public_html\/application\/libraries\/dompdf\/vendor\/dompdf\/dompdf\/lib\/fonts\/open_sans_300_italic_b4a7d925e086ad148b06e87bfa6cda0e",
+        "italic": "\/home\/soykotp2\/public_html\/application\/libraries\/dompdf\/vendor\/dompdf\/dompdf\/lib\/fonts\/open_sans_italic_e9604750f83ae7f38d39e13a06017607",
+        "500_italic": "\/home\/soykotp2\/public_html\/application\/libraries\/dompdf\/vendor\/dompdf\/dompdf\/lib\/fonts\/open_sans_500_italic_00f9f350087872e251f238e606ef4973",
+        "600_italic": "\/home\/soykotp2\/public_html\/application\/libraries\/dompdf\/vendor\/dompdf\/dompdf\/lib\/fonts\/open_sans_600_italic_048437d93fe9c72528cad9c47513049b",
+        "bold_italic": "\/home\/soykotp2\/public_html\/application\/libraries\/dompdf\/vendor\/dompdf\/dompdf\/lib\/fonts\/open_sans_bold_italic_23785369150dc0c2a80d84888c973652",
+        "800_italic": "\/home\/soykotp2\/public_html\/application\/libraries\/dompdf\/vendor\/dompdf\/dompdf\/lib\/fonts\/open_sans_800_italic_09189029172dba6cd3d6c000f906f14e",
+        "300": "\/home\/soykotp2\/public_html\/application\/libraries\/dompdf\/vendor\/dompdf\/dompdf\/lib\/fonts\/open_sans_300_8eafd575bbaef3821514b2ae187a32c3",
+        "normal": "\/home\/soykotp2\/public_html\/application\/libraries\/dompdf\/vendor\/dompdf\/dompdf\/lib\/fonts\/open_sans_normal_0de70c49c12ad3d5b30897be0764f760",
+        "500": "\/home\/soykotp2\/public_html\/application\/libraries\/dompdf\/vendor\/dompdf\/dompdf\/lib\/fonts\/open_sans_500_e5c00ff5fbdabfd1178bcb6213f08eaa",
+        "600": "\/home\/soykotp2\/public_html\/application\/libraries\/dompdf\/vendor\/dompdf\/dompdf\/lib\/fonts\/open_sans_600_80b344cbabc13253146884f38d4f451d",
+        "bold": "open_sans_bold_307c8b05e5c1ebed4511274cd14c5aa1"
+    }
+}

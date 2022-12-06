@@ -1,0 +1,34 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');*/
+
+:root {
+    --blackColor: #2F2F2F;
+    --greenColor: #198754;
+    --whiteColor: #ffffff;
+    --whiteWithOpacity: #FFFFFFCC;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    width: 320px;
+    height: auto;
+    padding: 5px;
+}
+
+.login .logo{
+    margin: auto;
+    width: 200px;
+    height: auto;
+}
+
+.signup{
+    width: 500px;
+    height: auto;
+}
+
+
+

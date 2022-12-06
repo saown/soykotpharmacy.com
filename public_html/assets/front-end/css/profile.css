@@ -1,0 +1,8 @@
+header{}
+header nav{}
+header nav .logo{}
+header nav .logo svg{
+    width: 150px;
+    height: auto;
+}
+header nav .userInfo{}

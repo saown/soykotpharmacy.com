@@ -1,0 +1,519 @@
+:root {
+    --blackColor: #2F2F2F;
+    --greenColor: #198754;
+    --whiteColor: #ffffff;
+    --whiteWithOpacity: #FFFFFFCC;
+}
+/* main */
+main{
+    margin-top: 125px;
+}
+
+/* Header Css */
+
+header {
+    height: 70px;
+    width: 100%;
+    background: var(--whiteColor);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -4px 6px var(--blackColor);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo a svg {
+    width: 130px;
+    height: auto;
+}
+
+header nav .menu-bar {
+    margin: auto;
+}
+
+header nav .menu-bar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav .menu-bar ul li {
+}
+
+header nav .menu-bar ul li .nav-link {
+    color: var(--blackColor);
+}
+
+header nav .menu-bar ul li .nav-link svg {
+    stroke: var(--blackColor) !important;
+    transition: stroke 0.15s ease-in-out;
+}
+
+header nav .menu-bar ul li .nav-link:hover {
+    color: var(--greenColor) !important;
+}
+
+header nav .menu-bar ul li .nav-link:hover > svg {
+    stroke: var(--greenColor) !important;
+}
+
+header nav .menu-bar ul .active .nav-link {
+    color: var(--greenColor) !important;
+}
+
+header nav .menu-bar ul .active .nav-link svg {
+    stroke: var(--greenColor) !important;
+}
+
+@media only screen and (max-width: 976px) {
+
+    header nav .menu-bar {
+        height: 100vh;
+        background: var(--whiteWithOpacity);
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 10000;
+    }
+
+    header nav .menu-bar ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        box-shadow: none;
+    }
+
+    header nav .menu-bar {
+        top: 115px;
+    }
+}
+
+/* search bar */
+
+header nav .search-bar {
+    position: relative;
+}
+
+header nav .search-bar input {
+    height: 40px;
+    min-width: 450px;
+    border: 1px solid var(--blackColor);
+    outline: none;
+    border-radius: 500px;
+    padding: 0 10px;
+    color: var(--blackColor);
+}
+
+header nav .search-bar button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+header nav .search-bar button svg {
+    stroke: var(--blackColor);
+}
+
+header nav .search-list {
+    display: none;
+    width: 450px;
+    height: auto;
+    position: absolute;
+}
+
+@media only screen and (max-width: 1300px) {
+    header nav .search-bar input {
+        min-width: 300px;
+    }
+
+    header nav .search-list {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    header nav .search-bar {
+        width: 340px;
+        position: absolute;
+        top: 87px;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header nav .search-bar input {
+        min-width: 100%;
+    }
+
+    header nav .search-list {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header nav .search-bar {
+        width: 290px;
+        position: absolute;
+        top: 87px;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header nav .search-bar input {
+        min-width: 100%;
+    }
+}
+
+header nav .cart-and-m-menu {
+    gap: 10px;
+}
+
+header nav .cart-and-m-menu .menu-btn {
+}
+
+header nav .cart-and-m-menu .menu-btn button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid var(--blackColor);
+    padding: 5px 6px;
+    background: none;
+    border-radius: 1px;
+    outline: none;
+}
+
+header nav .cart-and-m-menu .menu-btn button svg {
+    stroke: var(--blackColor);
+}
+
+.menu-btn-active button{
+    border: 2px solid var(--greenColor) !important;
+}
+.menu-btn-active button svg{
+    stroke: var(--greenColor) !important;
+}
+
+/* shopping cart*/
+header nav .cart-and-m-menu .shopping-cart a {
+    gap: 5px;
+    text-decoration: none;
+    color: var(--blackColor);
+}
+
+header nav .cart-and-m-menu .shopping-cart a .cart-icon svg {
+    width: 20px;
+    height: auto;
+    stroke: var(--blackColor);
+}
+
+header nav .cart-and-m-menu .shopping-cart a .cart-count {
+    font-size: 16px;
+    color: var(--blackColor);
+}
+
+header nav .cart-and-m-menu .shopping-cart a:hover {
+    color: var(--greenColor);
+}
+
+header nav .cart-and-m-menu .shopping-cart a:hover > .cart-icon svg {
+    stroke: var(--greenColor);
+}
+
+header nav .cart-and-m-menu .shopping-cart a:hover > .cart-count {
+    color: var(--greenColor);
+}
+
+.cart-and-m-menu .active a{
+    color: var(--greenColor) !important;
+}
+.cart-and-m-menu .active a .cart-icon svg {
+    stroke: var(--greenColor) !important;
+}
+.cart-and-m-menu .active a .cart-count{
+    color: var(--greenColor) !important;
+}
+
+/* product list */
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.products .product {
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 10px;
+}
+
+.products .product .p-details {
+    height: auto;
+    font-size: 16px;
+}
+
+.products .product .p-details p {
+    color: var(--blackColor);
+}
+
+.products .product .p-details select {
+    height: 30px;
+    font-size: 12pt;
+    outline: none;
+    border: 1px solid var(--blackColor);
+    border-radius: 5px;
+    background: var(--whiteColor);
+}
+
+.products .product .p-details input {
+    height: 30px;
+    font-size: 12pt;
+    outline: none;
+    border: 1px solid var(--blackColor);
+    border-radius: 5px;
+}
+
+.products .product .p-action {
+
+}
+
+.products .product .p-action button {
+    border: none;
+    outline: none;
+    color: white;
+    height: 30px;
+    width: auto;
+    border-radius: 5px;
+    background: var(--greenColor);
+    transition: 1s ease-in-out;
+}
+
+.products .product .p-action button:hover {
+    background: var(--blackColor);
+}
+
+@media only screen and (max-width: 500px) {
+    .products {
+        margin-top: 70px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        justify-content: center;
+    }
+}
+
+/* pagination */
+
+.page-list .pagination {
+    gap: 10px;
+}
+
+.page-list ul li a {
+    text-decoration: none;
+    background: var(--blackColor);
+    color: var(--whiteColor);
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1s ease-in-out;
+}
+
+.page-list ul li a:hover {
+    background: var(--greenColor);
+}
+.page-list ul li .active{
+    background: var(--greenColor) !important;
+}
+
+/* contact */
+.contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*margin-bottom: 400px;*/
+}
+
+.contact .contact-background img {
+    width: 100%;
+}
+
+.contact form {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    background: var(--whiteColor);
+    border-radius: 20px;
+}
+
+.contact form label {
+    color: var(--blackColor);
+}
+
+.contact form input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid var(--blackColor);
+    border-radius: 5px;
+    padding: 0 10px;
+    outline: none;
+}
+
+.contact form textarea {
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+}
+
+.contact form button {
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* cart list*/
+.cart-list-with-summery .row .cart-list table{
+    color: var(--blackColor);
+}
+.cart-list-with-summery .row .cart-list table tbody td input{
+    width: 100px;
+    outline: none;
+}
+.cart-list-with-summery .row .cart-summery .card .card-body .billing-and-shopping-address p{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 5px;
+}
+.cart-list-with-summery .row .cart-summery .card .card-body .billing-and-shopping-address p span{
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    color: var(--blackColor);
+    font-size: 16px;
+}
+.cart-list-with-summery .row .cart-summery .card .card-body .billing-and-shopping-address p button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--greenColor);
+    background: none;
+    border: none;
+}
+.cart-list-with-summery .row .cart-summery .card .card-body .billing-and-shopping-address{}
+.cart-list-with-summery .row .cart-summery .card .card-body .coupon-code input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 1px solid var(--blackColor);
+    font-size: 12pt;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+    .cart-list-with-summery .row .cart-summery{
+        margin-top: 10px;
+    }
+}
+
+/* login form */
+.main-content{
+    height: 100vh;
+}
+.main-content .form{
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+}
+.main-content .form .logo{
+    width: 200px;
+    height: auto;
+}
+
+.main-content .form .login-form input{
+    width: 100%;
+    height: 35px;
+    border: 1px solid var(--blackColor);
+    padding: 0 10px;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.main-content .form .direction .forget-and-signup a{
+    text-decoration: none;
+    color: var(--blackColor);
+}
+.main-content .form .direction .forget-and-signup a:hover{
+    color: var(--greenColor);
+}
+
+/* footer */
+footer {
+    background: var(--blackColor);
+    min-height: 200px;
+    width: 100%;
+    color: var(--whiteColor);
+    text-align: center;
+    align-items: center;
+}
+
+footer .logo-with-short-story {
+    max-width: 460px;
+    text-align: center;
+}
+
+footer .logo-with-short-story .footer-logo svg {
+    width: 130px;
+    height: auto;
+    color: var(--whiteColor);
+}
+
+footer .logo-with-short-story .footer-slogan,
+footer .logo-with-short-story .footer-contact-number {
+    font-size: 14px;
+}
+
+footer .author {
+    height: 60px;
+    width: 100%;
+    background: #1d1d1d;
+    font-size: 14px;
+}
